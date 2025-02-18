@@ -1,12 +1,157 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>School Project Management</title>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Welcome to School Project Management</h1>-->
+<!--<a th:href="@{/projects}">View Projects</a> |-->
+<!--<a th:href="@{/projects/add}">Add New Project</a>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>School Project Management</title>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <h1>School Project Management</h1>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a th:href="@{/projects}">View Projects</a></li>-->
+<!--                <li><a th:href="@{/projects/add}">Add New Project</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<main class="container">-->
+<!--    <p>This is where your main content will go.</p>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <p>&copy; 2023 School Project Management</p>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>School Project Management</title>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <h1>School Project Management</h1>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a th:href="@{/projects}">View Projects</a></li>-->
+<!--                <li><a th:href="@{/projects/add}">Add New Project</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<main class="container">-->
+<!--    <p>Welcome to the School Project Management system.  Use the links above to manage your projects.</p>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <p>&copy; 2025 School Project Management</p>-->
+<!--        <p> Made by Aimal khan </p>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>School Project Management</title>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <h1>School Project Management</h1>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li><a th:href="@{/projects}">View Projects</a></li>-->
+<!--                <li><a th:href="@{/projects/add}">Add New Project</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--        <img src="/images/aimal khan pic(1).jpg" alt="Profile Picture" class="profile-image"> </div>-->
+<!--</header>-->
+
+<!--<main class="container">-->
+<!--    <p>Welcome to the School Project Management system.  Use the links above to manage your projects.</p>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <p>&copy; 2025 School Project Management</p>-->
+<!--        <p> Made by Aimal khan </p>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>School Project Management</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Add this CSS to style the image */
+        .profile-picture {
+            float: right; /* Float the image to the right */
+            width: 100px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 20px; /* Add some space between the text and the image */
+            border-radius: 50%; /* Optional: Make the image round */
+            border: 2px solid #ccc; /* Optional: Add a border */
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to School Project Management</h1>
-<a th:href="@{/projects}">View Projects</a> |
-<a th:href="@{/projects/add}">Add New Project</a>
+<header>
+    <div class="container">
+        <h1>School Project Management</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/projects}">View Projects</a></li>
+                <li><a th:href="@{/projects/add}">Add New Project</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <p>Welcome to the School Project Management system. Use the links above to manage your projects.</p>
+    <!-- Add your image here -->
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 School Project Management</p>
+        <img src="images/aimal_khan_pic.jpg" alt="Aimal Khan" class="profile-picture">
+        <p>Made by Aimal Khan</p>
+    </div>
+</footer>
 </body>
 </html>

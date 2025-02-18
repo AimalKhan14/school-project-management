@@ -1,3 +1,40 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>View Projects</title>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Project List</h1>-->
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Description</th>-->
+<!--        <th>Deadline</th>-->
+<!--        <th>Status</th>-->
+<!--        <th>Action</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="project : ${projects}">-->
+<!--        <td th:text="${project.id}"></td>-->
+<!--        <td th:text="${project.name}"></td>-->
+<!--        <td th:text="${project.description}"></td>-->
+<!--        <td th:text="${project.deadline}"></td>-->
+<!--        <td th:text="${project.status}"></td>-->
+<!--        <td>-->
+<!--            <a th:href="@{/projects/delete/{id}(id=${project.id})}">Delete</a>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--<a th:href="@{/projects/add}">Add New Project</a>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -5,31 +42,45 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<h1>Project List</h1>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Deadline</th>
-        <th>Status</th>
-        <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="project : ${projects}">
-        <td th:text="${project.id}"></td>
-        <td th:text="${project.name}"></td>
-        <td th:text="${project.description}"></td>
-        <td th:text="${project.deadline}"></td>
-        <td th:text="${project.status}"></td>
-        <td>
-            <a th:href="@{/projects/delete/{id}(id=${project.id})}">Delete</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<a th:href="@{/projects/add}">Add New Project</a>
+<header>
+    <div class="container">
+        <h1>Project List</h1>
+    </div>
+</header>
+
+<main class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="project : ${projects}">
+            <td th:text="${project.id}"></td>
+            <td th:text="${project.name}"></td>
+            <td th:text="${project.description}"></td>
+            <td th:text="${project.deadline}"></td>
+            <td th:text="${project.status}"></td>
+            <td>
+                <a th:href="@{/projects/delete/{id}(id=${project.id})}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/projects/add}" class="btn btn-primary">Add New Project</a>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 School Project Management</p>
+        <p> Made by Aimal khan </p>
+    </div>
+</footer>
 </body>
 </html>
